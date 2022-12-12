@@ -1,9 +1,12 @@
 5-round rock-paper-scissors against a computer.
 
-start a round
-  let opponent figure out their action
-  ask user to type their action is
-  evaluate which action beats the other
-  determine who chose the winning action and give them a point.
-start a new round
-  repeat actions above until 3/5 rounds are won by one person.
+Start a game
+Start a round
+  Let computer figure out their action
+  Ask user to iput their action
+  Evaluate which action beats the other
+  Determine who chose the winning action 
+  Give the winner a point
+Start a round
+  Repeat above until 3/5 rounds are won by one player
+  Announce the winner
