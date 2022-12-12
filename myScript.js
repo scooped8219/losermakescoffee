@@ -19,7 +19,7 @@ function getComputerChoice() {
 let computerChoice = getComputerChoice();
 
 //Variable for user's action
-let userChoice = prompt("rock, paper or scissors?");
+let userChoice = prompt("Rock, paper or scissors?").toLowerCase();
 
 //Function to prompt for user
 function getUserChoice(userChoice) {
@@ -38,6 +38,7 @@ console.log("Computer chose "
 console.log("Player chose " 
 + userChoice);
 
+//Round Evaluation
 if (computerChoice === userChoice) {
   console.log("Draw!");
   }
@@ -67,3 +68,4 @@ else {
       }
   }  
 }
+
