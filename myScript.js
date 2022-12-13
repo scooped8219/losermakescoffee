@@ -12,24 +12,27 @@ function getComputerChoice() {
   convertAction = 'scissors';
   }
   
-  return convertAction
+  return convertAction;
 }
 
 //Variable for computer action
 let computerChoice = getComputerChoice();
 
 //Variable for user's action
-let userChoice = prompt("Rock, paper or scissors?").toLowerCase();
+let userChoice = getUserChoice()
 
-//Function to prompt for user
-function getUserChoice(userChoice) {
-  return userChoice;
+//Function to get user action
+function getUserChoice() {
+  while (true) {
+    input = prompt("Rock, paper or scissors?").toLowerCase();
+  
+  if ((input === 'rock')||(input === 'paper')||(input === 'scissor')) {
+    console.log('Valid answer entered');
+    return input;
+    break;
+  }
+  }
 }
-
-//Ask User
-getUserChoice()
-//Ask Computer
-getComputerChoice()
 
 //Display game info
 console.log("Shoot!");
@@ -68,4 +71,3 @@ else {
       }
   }  
 }
-
