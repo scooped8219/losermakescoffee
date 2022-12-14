@@ -28,15 +28,11 @@ function playRound() {
 
   //Function to get user action
   function getUserChoice() {
-    while (true) {
-      input = prompt("Rock, paper or scissors?").toLowerCase();
-    
-    if ((input === 'rock')||(input === 'paper')||(input === 'scissors')) {
-      //console.log('Valid answer entered');
-      return input;
-      break;
+    input = prompt("Rock, paper or scissors?").toLowerCase();
+    while (input !== 'rock' && input !== 'paper' && input !=='scissors') {
+      input = prompt("Try again: rock, paper or scissors?").toLowerCase();
     }
-    }
+    return input;
   }
 
   //Display game info
